@@ -15,6 +15,9 @@ router.post('/login',userController.apiLogin)
 
 router.post('/create',orderController.createOrder);
 router.get('/orders',orderController.getOrders);
+router.post('/getsingleorder',orderController.getsingleorder);
+router.post('/changestatus',orderController.changeStatus);
+router.post('/deleteorder',orderController.deleteorder);
 
 
 
