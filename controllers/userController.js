@@ -73,7 +73,7 @@ exports.apiRegister = function (req, res) {
 
     })
     .catch((regErrors) => {
-      res.status(500).send(regErrors);
+      res.status(400).send(regErrors);
     });
 };
 

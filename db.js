@@ -1,5 +1,5 @@
-const dotenv = require("dotenv")
-dotenv.config()
+const env = require("dotenv")
+env.config()
 const mongodb = require("mongodb")
 
 mongodb.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, client) {
